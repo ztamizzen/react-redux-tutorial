@@ -1,0 +1,42 @@
+.example-enter {
+  opacity: 0.01;
+  transform: scale(1.05);
+}
+.example-enter.example-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms ease-in, transform 300ms ease-out;
+}
+.example-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.example-exit.example-exit-active {
+  opacity: 0.01;
+  transform: scale(1.05);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+.comment-list {
+  list-style-type: upper-roman;
+  margin: 0 0 1rem;
+  padding: 1rem;
+}
+
+.comment-item {
+  border-bottom: 4px ridge darkseagreen;
+  margin-bottom: 0.3rem;
+  padding: 0.2rem 1rem;
+}
+
+.comment-item h4,
+.comment-item h5,
+.comment-item p {
+  margin: unset;
+}
+
+.comment-item h4,
+.comment-item h5,
+.comment-item p {
+  margin: 0.5rem 0;
+}

@@ -1,0 +1,34 @@
+.article-list {
+  list-style: none;
+
+  margin-bottom: 1rem;
+  padding: 0;
+}
+.article-item {
+  border-bottom: 4px ridge cornflowerblue;
+
+  margin: 0 1rem 1rem 0;
+  padding: 0 1rem 1rem;
+}
+
+.article-item:first-of-type {
+  padding-top: 1rem;
+}
+
+.article-enter {
+  opacity: 0;
+}
+
+.article-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.article-exit {
+  opacity: 1;
+}
+
+.article-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}

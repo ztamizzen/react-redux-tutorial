@@ -1,0 +1,36 @@
+.container {
+  margin: 1rem;
+  transition: margin .5s ease, width .5s ease;
+  width: 100%;
+}
+.error {
+    background-color: cornsilk;
+    border: 1px dotted brown;
+    border-radius: 1rem;
+    color: brown;
+    padding: 1rem;
+}
+@media only screen and (min-width: 320px) {
+  .container {
+    margin: auto;
+    max-width: 80vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .container {
+    margin: auto;
+    max-width: 70vw;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .container {
+    margin: auto;
+    max-width: 60vw;
+  }
+}
+
+/* == TODO'S == */
+.todos {
+  background-image: linear-gradient(to top, #ea9, white);
+  padding: 1rem;
+}

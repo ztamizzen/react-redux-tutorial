@@ -1,0 +1,30 @@
+.article-form {
+  background-color: ivory;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.article-form > div {
+  align-items: baseline;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 3rem 2fr;
+  margin-bottom: 1rem;
+}
+
+.article-form label {
+  flex: 0 1 auto;
+  padding-right: 1rem;
+}
+
+.article-form input,
+.article-form textarea {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  flex: 1;
+  padding: 0.3rem;
+}
+
+.article-form textarea {
+  min-height: 4rem;
+}

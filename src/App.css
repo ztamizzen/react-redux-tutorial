@@ -1,5 +1,24 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: [sidebar-start] 200px [sidebar-end main-start] 1fr [main-end];
+}
+
+nav {
+  grid-column: span 2;
+  margin-bottom: 1px;
+  padding: 1rem;
+}
+
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  padding: 1rem;
+}
+.sidebar h4 {
+  margin: 0;
+}
+
+main {
+  grid-column: main-start / main-end;
 }
 
 .App-logo {
@@ -14,20 +33,32 @@
 }
 
 .App-header {
+  align-items: center;
   background-color: #282c34;
-  min-height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  grid-column: span 2;
+  justify-content: center;
+  min-height: 20vh;
+  text-align: center;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.flex-row {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.3rem 1rem;
+  width: 100%;
+}
+.flex-row button {
+  flex-basis: 25%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

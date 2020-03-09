@@ -1,0 +1,13 @@
+.big-picture {
+  background: #fffd;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.big-picture figcaption {
+    padding: 1rem;
+    text-shadow: 1px 1px #888;
+    text-transform: capitalize;
+}
